@@ -1,0 +1,57 @@
+{
+  "collection": "@nestjs/schematics",
+  "sourceRoot": "apps/api-gateway/src",
+  "monorepo": true,
+  "root": "apps/api-gateway",
+  "compilerOptions": {
+    "webpack": true,
+    "tsConfigPath": "apps/api-gateway/tsconfig.app.json"
+  },
+  "projects": {
+    "api-gateway": {
+      "type": "application",
+      "root": "apps/api-gateway",
+      "entryFile": "main",
+      "sourceRoot": "apps/api-gateway/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/api-gateway/tsconfig.app.json"
+      }
+    },
+    "micro-admin-backend": {
+      "type": "application",
+      "root": "apps/micro-admin-backend",
+      "entryFile": "main",
+      "sourceRoot": "apps/micro-admin-backend/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/micro-admin-backend/tsconfig.app.json"
+      }
+    },
+    "micro-challenges": {
+      "type": "application",
+      "root": "apps/micro-challenges",
+      "entryFile": "main",
+      "sourceRoot": "apps/micro-challenges/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/micro-challenges/tsconfig.app.json"
+      }
+    },
+    "micro-messages": {
+      "type": "application",
+      "root": "apps/micro-messages",
+      "entryFile": "main",
+      "sourceRoot": "apps/micro-messages/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/micro-messages/tsconfig.app.json"
+      }
+    },
+    "micro-rankings": {
+      "type": "application",
+      "root": "apps/micro-rankings",
+      "entryFile": "main",
+      "sourceRoot": "apps/micro-rankings/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/micro-rankings/tsconfig.app.json"
+      }
+    }
+  }
+}

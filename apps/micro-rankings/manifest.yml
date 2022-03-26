@@ -1,0 +1,11 @@
+---
+  applications:
+    - name: srmicro-rankings
+      path: dist
+      instances: 1
+      memory: 128MB
+      disk_quota: 1GB
+      command: node main
+      health-check-type: none
+      env:
+        NODE_ENV: prod
